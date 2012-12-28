@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 
 				$('#thenewdivid input').keydown(function(event){
-					if(event.keyCode == 13 && event.ctrlKey)
+					if(event.keyCode == 13 && event.ctrlKey) //  Ctrl + Enter
 						$.ajax({url:'http://10.203.116.61/sql.php?query='+encodeURIComponent(''
 							+' SELECT order_url FROM  pandaorders' 
 							+' WHERE order_url LIKE "%'+$('#thenewdivid input').val()+'%" ' 								
