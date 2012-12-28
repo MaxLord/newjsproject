@@ -1,0 +1,17 @@
+{
+
+
+  "name": "NewJScript","version": "1.1","manifest_version": 2,
+
+
+
+	"content_scripts": [{
+		"all_frames": true,
+		"matches": ["http://*/*","https://*/*"],
+		"js": ["jquery-1.8.3.min.js", "chromeext.user.js"]
+	}]
+
+
+}
+
+
